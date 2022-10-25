@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- necesario para el encabezado: -->
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ------------ hasta acá lo del encabezado -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js"
+        integrity="sha384-q9CRHqZndzlxGLOj+xrdLDJa9ittGte1NksRmgJKeCV9DrM7Kz868XYqsKWPpAmn"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="valida.js"></script>
+    <title>Contacto</title>
+</head>
+
+<body>
+    <div class="header">
+        <div><img src="img/logomiboda.png" width="70" height="70"></div>
+        <div>
+            <h1><strong>Mi Boda</strong></h1>
+        </div>
+        <div>
+            <a href="http://www.instagram.com" target="_blank"><img src="img/iglogo.png" alt="instagram" width="40"
+                    height="40"></a>
+            <a href="http://www.twitter.com" target="_blank"><img src="img/twiterlogo.png" alt="twitter" width="40"
+                    height="40"></a>
+            <a href="http://www.facebook.com" target="_blank"><img src="img/logofacebook.png" alt="facebook" width="40"
+                    height="40"></a>
+            <a href="http://www.whatsapp.com" target="_blank"><img src="img/wsplogo.png" alt="whatsapp" width="40"
+                    height="40"></a>
+        </div>
+    </div>
+    <!-- Botones -->
+    <div class="navbar">
+        <a href="inicio.html">Página principal</a>
+        <a href="galeria.html">Trabajos realizados</a>
+        <a href="preguntas.html">Preguntas frecuentes</a>
+        <a href="contacto.html">Contáctenos</a>
+    </div>
+    <main>
+        <div class="div-3">
+            <h2 class="titulos"><strong>Completa el Formulario</h2>
+        </div>
+        <div class="contenedor-1">
+            <div>
+                <img class="fotoinicio"
+                    src="https://www.zankyou.cl/images/mag-card-c/7ad/53a2/878/623/-/cl/wp-content/uploads/2020/10/befunky-collage.jpg">
+            </div>
+            <div>
+                <form action="https://formspree.io/f/maykbdrn" name='formulario-js' method="POST"
+                    class="needs-validation formulario" novalidate>
+                    <div>
+                        <label for="nombre" class="form-label">Nombre y Apellido</label>
+                        <input type="text" class="form-control" id='nombre' name='nombre' required>
+                        <!-- Mensajes para validación   -->
+                        <div class="valid-tooltip">Campo válido</div>
+                        <div class="invalid-tooltip">Debe completar los datos</div>
+                    </div>
+                    <div>
+                        <label for="email" class="form-label">Email</label>
+                        <input type='email' id='email' name='email' class="form-control" required>
+                        <!-- Mensajes para validación   -->
+                        <div class="valid-tooltip">Campo válido</div>
+                        <div class="invalid-tooltip">Debe completar los datos</div>
+                    </div>
+                    <div>
+                        <label for='telefono' class="form-label">Teléfono</label>
+                        <input type='tel' id='telefono' name='telefono' class="form-control" required>
+                        <!-- Mensajes para validación   -->
+                        <div class="valid-tooltip">Campo válido</div>
+                        <div class="invalid-tooltip">Debe completar los datos</div>
+                    </div>
+                    <div>
+                        <label for='tipo' class="form-label">Tipo de invitaciòn</label>
+                        <select id='tipo' name='tipo' class="form-control" required>
+                            <option selected disabled value="">Seleccione...</option>
+                            <option>Elegante</option>
+                            <option>Sencillo</option>
+                            <option>Country</option>
+                            <option>Dìa</option>
+                            <option>Noche</option>
+                            <option>Playa</option>
+                        </select>
+                        <!-- Mensajes para validación   -->
+                        <div class="valid-tooltip">Campo válido</div>
+                        <div class="invalid-tooltip">Debe completar los datos</div>
+                    </div>
+                    <div>
+                        <label for='comentarios'>Comentarios</label>
+                        <textarea id='comentarios' name='Comentarios' cols="50"></textarea>
+                    </div>
+                    <div class="div-4">
+                        <div>
+                            <button class="boton-2" type="submit">Enviar Pedido</button>
+                        </div>
+                    </div>
+                </form>
+                <br>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div>
+            <h3>Seguinos en nuestras Redes Sociales</h3>
+            <div><a href="http://www.instagram.com" target="_blank"><img src="img/iglogo.png" alt="instagram" width="50"
+                        height="50"></a>
+                <a href="http://www.twitter.com" target="_blank"><img src="img/twiterlogo.png" alt="twitter" width="50"
+                        height="50"></a>
+                <a href="http://www.facebook.com" target="_blank"><img src="img/logofacebook.png" alt="facebook"
+                        width="50" height="50"></a>
+                <a href="http://www.whatsapp.com" target="_blank"><img src="img/wsplogo.png" alt="whatsapp" width="50"
+                        height="50"></a>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        (function () {
+            'use strict'
+
+            // Obtener todos los formularios a los que queremos aplicar estilos de validación de Bootstrap personalizados
+            var forms = document.querySelectorAll('.needs-validation')
+
+            //Recorremos los forms y evitamos en envío sin validacion
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+</body>
+
+</html>
